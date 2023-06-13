@@ -18,5 +18,11 @@ public class StEx02 {
 	public static void main(String[] args) {
 		St02.setA(100); // 클래스명.정적메소드()
 		System.out.println("a = " + St02.getA());
+		
+		St02 st01 = new St02();
+		St02 st02 = new St02();
+		
+		st01.setA(1000);
+		System.out.println("a = " + st02.getA()); //1000 정적 메소드는 생성된 객체에 의해서 공유된다.
 	}
 }
